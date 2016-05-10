@@ -36,7 +36,7 @@ public class SweetAlert: UIViewController {
     var userAction:((isOtherButton: Bool) -> Void)? = nil
     let kFont = "Helvetica"
 
-    init() {
+    public init() {
         super.init(nibName: nil, bundle: nil)
         self.view.frame = UIScreen.mainScreen().bounds
         self.view.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
