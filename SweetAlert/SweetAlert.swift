@@ -156,6 +156,10 @@ public class SweetAlert: UIViewController {
         contentView.frame = CGRect(x: (mainScreenBounds.size.width - kContentWidth) / 2.0, y: (mainScreenBounds.size.height - y) / 2.0, width: kContentWidth, height: y)
         contentView.clipsToBounds = true
     }
+
+    public func getImageView() -> UIImageView?{
+        return self.imageView
+    }
     
     public func pressed(sender: UIButton!) {
         self.closeAlert(sender.tag)
